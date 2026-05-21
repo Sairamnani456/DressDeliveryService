@@ -14,53 +14,42 @@
 
         .container {
             width: 420px;
-            max-width: 90%;
             margin: 50px auto;
             background: white;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
         h1 {
             text-align: center;
             color: #333;
-            margin-bottom: 10px;
+            font-size: 24px;
         }
 
         p {
             text-align: center;
             color: #666;
-            margin: 6px 0;
         }
 
         label {
-            display: block;
-            margin-top: 14px;
-            margin-bottom: 6px;
             font-weight: bold;
-            color: #333;
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 6px;
         }
 
         input {
-            display: block;
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 6px;
             box-sizing: border-box;
-            font-size: 14px;
-        }
-
-        input:focus {
-            outline: none;
-            border-color: #0077cc;
-            box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
         }
 
         button {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 18px;
             padding: 12px;
             background-color: #0077cc;
             color: white;
@@ -76,7 +65,7 @@
 
         .result {
             margin-top: 20px;
-            padding: 14px;
+            padding: 12px;
             background-color: #eef7ff;
             border-left: 4px solid #0077cc;
             border-radius: 6px;
@@ -92,16 +81,16 @@
 
         <form method="POST">
             <label for="customer_name">Customer Name:</label>
-            <input type="text" id="customer_name" name="customer_name" value="{{ customer_name }}" placeholder="Enter your name" required>
+            <input type="text" id="customer_name" name="customer_name" value="{{ customer_name }}" required>
 
             <label for="order_id">Order ID:</label>
-            <input type="text" id="order_id" name="order_id" value="{{ order_id }}" placeholder="Enter order ID" required>
+            <input type="text" id="order_id" name="order_id" value="{{ order_id }}" required>
 
             <label for="dress_type">Dress Type:</label>
-            <input type="text" id="dress_type" name="dress_type" value="{{ dress_type }}" placeholder="e.g. Party Dress" required>
+            <input type="text" id="dress_type" name="dress_type" value="{{ dress_type }}" required>
 
             <label for="delivery_status">Delivery Status:</label>
-            <input type="text" id="delivery_status" name="delivery_status" value="{{ delivery_status }}" placeholder="e.g. Shipped" required>
+            <input type="text" id="delivery_status" name="delivery_status" value="{{ delivery_status }}" required>
 
             <button type="submit">Track Order</button>
         </form>
